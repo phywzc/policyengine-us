@@ -7,6 +7,4 @@ class innovative_motor_vehicle_passengers_seating(Variable):
     label = "Count of passenger seats in the innovative motor vehicle"
     unit = USD
     definition_period = YEAR
-    reference="https://tax.colorado.gov/sites/tax/files/documents/DR_0617_2022.pdf#page=1"
-
-
+    reference = "https://tax.colorado.gov/sites/tax/files/documents/DR_0617_2022.pdf#page=1"

@@ -3,7 +3,7 @@ from policyengine_us.model_api import *
 
 class InnovativeMotorVehicleFuelType(Enum):
     ELECTRIC_VECHICLE = "Electric Vehicle"
-    PLUG_IN_HYBRID_ELECTRIC_VECHICLE= "Plug-in Hybrid Electric Vehicle"
+    PLUG_IN_HYBRID_ELECTRIC_VECHICLE = "Plug-in Hybrid Electric Vehicle"
     OTHER = "Other"
 
 
