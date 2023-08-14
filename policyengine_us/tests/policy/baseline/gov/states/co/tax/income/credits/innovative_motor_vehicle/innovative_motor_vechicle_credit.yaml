@@ -2,7 +2,7 @@
   period: 2023
   input:
     innovative_motor_vechicle_credit_eligible: True
-    innovative_motor_vehicle_ownership: VECHICLE_PURCHASE
+    innovative_vehicle_ownership: VECHICLE_PURCHASE
   output:
     innovative_motor_vehicle_credit: 2_500
   
@@ -10,7 +10,7 @@
   period: 2023
   input:
     innovative_motor_vechicle_credit_eligible: True
-    innovative_motor_vehicle_ownership: VECHICLE_LEASE
+    innovative_vehicle_ownership: VECHICLE_LEASE
   output:
     innovative_motor_vehicle_credit: 1_500
 
@@ -18,7 +18,7 @@
   period: 2023
   input:
     innovative_motor_vechicle_credit_eligible: False
-    innovative_motor_vehicle_ownership: VECHICLE_LEASE
+    innovative_vehicle_ownership: VECHICLE_LEASE
   output:
     innovative_motor_vehicle_credit: 0
 
@@ -26,6 +26,6 @@
   period: 2023
   input:
     innovative_motor_vechicle_credit_eligible: False
-    innovative_motor_vehicle_ownership: VECHICLE_PURCHASE
+    innovative_vehicle_ownership: VECHICLE_PURCHASE
   output:
     innovative_motor_vehicle_credit: 0

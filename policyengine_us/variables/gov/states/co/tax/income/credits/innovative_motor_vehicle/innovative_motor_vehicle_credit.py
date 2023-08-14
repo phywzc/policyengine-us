@@ -17,6 +17,6 @@ class innovative_motor_vehicle_credit(Variable):
         p = parameters(
             period
         ).gov.states.co.tax.income.credits.innovative_motor_vehicle
-        ownership = tax_unit("innovative_motor_vehicle_ownership", period)
+        ownership = tax_unit("innovative_vehicle_ownership", period)
         innovative_motor_vehicle_credit = p.amount[ownership]
         return innovative_motor_vehicle_credit

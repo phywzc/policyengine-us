@@ -1,17 +1,17 @@
 from policyengine_us.model_api import *
 
 
-class InnovativeMotorVehicleOwnership(Enum):
+class InnovativeVehicleOwnership(Enum):
     VECHICLE_PURCHASE = "Vehicle Purchase"
     VECHICLE_LEASE = "Vehicle Lease"
     OTHER = "Other"
 
 
-class innovative_motor_vehicle_ownership(Variable):
+class innovative_vehicle_ownership(Variable):
     value_type = Enum
-    possible_values = InnovativeMotorVehicleOwnership
+    possible_values = InnovativeVehicleOwnership
     default_value = (
-        InnovativeMotorVehicleOwnership.OTHER
+        InnovativeVehicleOwnership.OTHER
     )  # OTHER is not included in the form, I consider OTHER as invalid for the credit.
     entity = TaxUnit
     label = "Colorado innovative motor vechicle ownership "

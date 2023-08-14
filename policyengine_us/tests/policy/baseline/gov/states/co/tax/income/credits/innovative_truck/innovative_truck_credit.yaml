@@ -1,0 +1,80 @@
+- name: innovative truck credit for purchased eligible truck (gvwr=10,000), should return 3_500 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_PURCHASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 10_000
+  output:
+    innovative_truck_credit: 3_500
+
+- name: innovative truck credit for purchased eligible truck (gvwr=10,001), should return 5_000 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_PURCHASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 10_001
+  output:
+    innovative_truck_credit: 5_000
+
+- name: innovative truck credit for purchased eligible truck (gvwr=26,000), should return 5_000 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_PURCHASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 26_000
+  output:
+    innovative_truck_credit: 5_000
+
+- name: innovative truck credit for purchased eligible truck (gvwr=26,001), should return 10_000 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_PURCHASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 26_001
+  output:
+    innovative_truck_credit: 10_000
+
+- name: innovative truck credit for leased eligible truck (gvwr=10,000), should return 1_750 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_LEASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 10_000
+  output:
+    innovative_truck_credit: 1_750
+
+- name: innovative truck credit for leased eligible truck (gvwr=10,001), should return 2_500 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_LEASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 10_001
+  output:
+    innovative_truck_credit: 2_500
+
+- name: innovative truck credit for leased eligible truck (gvwr=26,000), should return 2_500 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_LEASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 26_000
+  output:
+    innovative_truck_credit: 2_500
+
+- name: innovative truck credit for leased eligible truck (gvwr=26,001), should return 5_000 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: VECHICLE_LEASE
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 26_001
+  output:
+    innovative_truck_credit: 5_000
+
+- name: innovative truck credit for other (not purchased and not leased) eligible truck (gvwr=26,001), should return 0 credit
+  period: 2023
+  input:
+    innovative_vehicle_ownership: OTHER
+    innovative_truck_credit_eligible: True
+    gross_vehicle_weight_rating: 26_001
+  output:
+    innovative_truck_credit: 0
