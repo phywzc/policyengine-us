@@ -1,0 +1,10 @@
+description: The Colorado innovative motor vehicle credit limit motor vehicle capable of seating certain amount passengers
+values:
+  2022-01-01: 12
+metadata:
+  label: Max passenger seatings for eligible innovative motor vehicle
+  period: year
+  unit: USD
+  reference:
+  - title: Innovative Motor Vehicle Credit and Innovative Truck Credit
+    href: https://tax.colorado.gov/sites/tax/files/documents/DR_0617_2022.pdf#page=1
