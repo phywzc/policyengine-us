@@ -1,0 +1,25 @@
+- name: ELECTRIC_TRUCK is valid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_fuel_type: ELECTRIC_VECHICLE
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: true
+
+- name: PLUG_IN_HYBRID_ELECTRIC_TRUCK is valid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_fuel_type: PLUG_IN_HYBRID_ELECTRIC_TRUCK
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: true
+  
+- name: OTHER is valid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_fuel_type: OTHER
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: false
+
+

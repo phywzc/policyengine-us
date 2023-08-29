@@ -1,0 +1,55 @@
+- name: 10 passenger seating and ELECTRIC_VECHICLE, is valid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_passengers_seating: 10
+    innovative_motor_vehicle_fuel_type: ELECTRIC_VECHICLE
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: true
+
+- name: 13 passenger seating and ELECTRIC_VECHICLE, is invalid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_passengers_seating: 13
+    innovative_motor_vehicle_fuel_type: ELECTRIC_VECHICLE
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: false
+
+- name: 10 passenger seating and OTHER, is invalid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_passengers_seating: 10
+    innovative_motor_vehicle_fuel_type: OTHER
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: false
+
+- name: 14 passenger seating and OTHER, is invalid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_passengers_seating: 14
+    innovative_motor_vehicle_fuel_type: OTHER
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: false
+
+- name: 14 passenger seating and PLUG_IN_HYBRID_ELECTRIC_VECHICLE, is invalid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_passengers_seating: 14
+    innovative_motor_vehicle_fuel_type: PLUG_IN_HYBRID_ELECTRIC_VECHICLE
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: false
+  
+
+- name: 11 passenger seating and PLUG_IN_HYBRID_ELECTRIC_VECHICLE, is valid for credit
+  period: 2023
+  input:
+    innovative_motor_vehicle_passengers_seating: 11
+    innovative_motor_vehicle_fuel_type: PLUG_IN_HYBRID_ELECTRIC_VECHICLE
+    state_code: CO
+  output:
+    innovative_motor_vechicle_credit_eligible: true
+

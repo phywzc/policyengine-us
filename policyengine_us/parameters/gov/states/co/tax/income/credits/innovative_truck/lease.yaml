@@ -1,0 +1,27 @@
+description: Colorado innovative truck credit for eligiable leased truck with certain amount of Gross Vehicle Weight Rating(GVWR)
+metadata:
+  type: single_amount
+  threshold_unit: pounds
+  amount_unit: currency-USD
+  # period: year
+  label: GVWR threshold for leased innovative truck credit
+  reference:
+    - title: Innovative Motor Vehicle Credit and Innovative Truck Credit
+      href: https://tax.colorado.gov/sites/tax/files/documents/DR_0617_2022.pdf#page=2
+    - title: 39-22-516.8. Tax credit for innovative trucks
+      href: https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=53a5e947-1990-4f4a-b74a-e4bc4de1668f&action=pawlinkdoc&pdcomponentid=&pddocfullpath=%2Fshared%2Fdocument%2Fstatutes-legislation%2Furn%3AcontentItem%3A6894-0703-GXF6-837P-00008-00&pdtocnodeidentifier=ABPAACAACAABAAGABH&config=014FJAAyNGJkY2Y4Zi1mNjgyLTRkN2YtYmE4OS03NTYzNzYzOTg0OGEKAFBvZENhdGFsb2d592qv2Kywlf8caKqYROP5&ecomp=k2vckkk&prid=11477d83-e1a5-4c6c-9cf1-1987104961d3
+
+
+brackets:
+  - threshold:
+      2023-01-01: -1
+    amount:
+      2023-01-01: 1_750 # Light Duty Electric Truck
+  - threshold:
+      2023-01-01: 10_001
+    amount:
+      2023-01-01: 2_500 # Medium Duty Electric Truck
+  - threshold:
+      2023-01-01: 26_001 
+    amount:
+      2023-01-01: 5_000 # # Heavy Duty Electric Truck
